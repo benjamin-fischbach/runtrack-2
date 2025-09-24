@@ -14,14 +14,16 @@ body {
     h1 {
         padding: 1%;
         color: var(--text);
-        font-weight:normal;
+        font-weight: normal;
     }
-    
-    .title-bar{
-    display: flex;
+
+    .title-bar {
+        display: flex;
         align-items: center;
         background-image: linear-gradient(to bottom, var(--dimgrey), var(--normalgrey));
         box-shadow: 0px -1px 0px var(--highlights);
+        border-left: solid 1px var(--highlights);
+        border-right: solid 1px var(--highlights);
         border-bottom: solid 1px var(--textshadow);
         border-radius: 5px 5px 0px 0px;
         padding: 6px;
@@ -29,23 +31,23 @@ body {
         margin-bottom: 0%;
         color: white;
         text-shadow: 1px 1px 0px var(--textshadow);
-        }
+    }
 
     .center-card {
-    color: white;
-    text-shadow: 1px 1px 0px var(--textshadow);
-    display: flex;
-    justify-self: center;
-    text-align: center;
-    padding: 1.5%;
-    padding-bottom: 10%;
-    margin: 10%;
-    margin-top: 0%;
-    background-color: var(--normalgrey);
-    border-radius: 0px 0px 5px 5px;
-    border:solid 1px var(--highlights) ;
+        color: white;
+        text-shadow: 1px 1px 0px var(--textshadow);
+        display: flex;
+        justify-self: center;
+        text-align: center;
+        padding: 1.5%;
+        padding-bottom: 10%;
+        margin: 10%;
+        margin-top: 0%;
+        background-image:linear-gradient(to bottom, var(--normalgrey)90%, var(--dimgrey) 100%);
+        border-radius: 0px 0px 5px 5px;
+        border: solid 1px var(--highlights);
 
-}
+    }
 }
 
 :root {
@@ -58,4 +60,3 @@ body {
     --highlights: #7f7f7f;
 
 }
-
