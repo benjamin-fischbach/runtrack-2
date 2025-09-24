@@ -14,7 +14,7 @@
     </header>
 
     <main>
-        
+    <h3 class="title-bar">Espace PHP</h3>  
     <p class="center-card">
         <?php echo 'Hello LaPlateforme!' ?>
     </p>
