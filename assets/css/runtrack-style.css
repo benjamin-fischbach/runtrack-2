@@ -5,7 +5,6 @@
 }
 
 body {
-    height: 100vh;
     box-sizing: border-box;
     color: var(--textwhite);
     background: radial-gradient(at 50% 100%, var(--dimgrey) 0%, var(--textshadow) 100%);
@@ -39,15 +38,23 @@ body {
         justify-self: center;
         text-align: center;
         padding: 1.5%;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
         margin: 10%;
         margin-top: 0%;
-        background-color:var(--textshadow);
+        background-color: var(--textshadow);
         border-radius: 0px 0px 5px 5px;
         border: solid 1px var(--highlights);
         border-top: solid 1px var(--normalgrey);
 
     }
+}
+
+footer {
+    text-align: center;
+    background-color: var(--textshadow);
+    border-top: solid 1px var(--normalgrey);
+    border-bottom: solid 1px var(--dimgrey);
+    color: var(--normalgrey);
 }
 
 :root {

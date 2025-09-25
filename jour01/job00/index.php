@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/runtrack2/assets/css/runtrack-style.css">
-    <title>Runtrack-2 - PHP : Jour 1 / Job 0.9</title>
+    <title>Runtrack-2 - PHP : Jour 1 / Job 0</title>
 </head>
 
 <body>
     <header>
-        <h1>Runtrack-2 - PHP : Jour 1 / Job 0.9</h1>
+        <h1>Runtrack-2 - PHP : Jour 1 / Job 0</h1>
     </header>
 
     <main>
@@ -22,7 +22,7 @@
     </main>
 
     <footer>
-        test
+        Ben Fischbach - CDPI La Plateforme, Marseille - 2025-2026
     </footer>
 </body>
 
