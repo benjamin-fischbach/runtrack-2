@@ -35,7 +35,6 @@ body {
 
     .center-card {
         color: white;
-        text-shadow: 1px 1px 0px var(--textshadow);
         display: flex;
         justify-self: center;
         text-align: center;
@@ -43,9 +42,10 @@ body {
         padding-bottom: 10%;
         margin: 10%;
         margin-top: 0%;
-        background-image:linear-gradient(to bottom, var(--normalgrey)90%, var(--dimgrey) 100%);
+        background-color:var(--textshadow);
         border-radius: 0px 0px 5px 5px;
         border: solid 1px var(--highlights);
+        border-top: solid 1px var(--normalgrey);
 
     }
 }
