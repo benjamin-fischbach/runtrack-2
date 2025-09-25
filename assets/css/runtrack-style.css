@@ -10,6 +10,11 @@ body {
     background: radial-gradient(at 50% 100%, var(--dimgrey) 0%, var(--textshadow) 100%);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+    header {
+        background-color: var(--textshadow);
+        border-bottom: solid 1px var(--normalgrey);
+    }
+
     h1 {
         padding: 1%;
         color: var(--text);
@@ -26,6 +31,7 @@ body {
         border-bottom: solid 1px var(--textshadow);
         border-radius: 5px 5px 0px 0px;
         padding: 6px;
+        padding-left: 1%;
         margin: 10%;
         margin-bottom: 0%;
         color: white;
@@ -38,6 +44,7 @@ body {
         justify-self: center;
         padding: 1.5%;
         padding-bottom: 2.5%;
+        padding-left: 1%;
         margin: 10%;
         margin-top: 0%;
         background-color: var(--textshadow);
