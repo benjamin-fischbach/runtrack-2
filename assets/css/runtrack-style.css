@@ -36,9 +36,8 @@ body {
         color: white;
         display: flex;
         justify-self: center;
-        text-align: center;
         padding: 1.5%;
-        padding-bottom: 5%;
+        padding-bottom: 2.5%;
         margin: 10%;
         margin-top: 0%;
         background-color: var(--textshadow);
