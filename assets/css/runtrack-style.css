@@ -41,7 +41,8 @@ body {
     .center-card {
         color: white;
         display: flex;
-        justify-self: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         padding: 1.5%;
         padding-bottom: 2.5%;
         padding-left: 1%;
@@ -51,10 +52,20 @@ body {
         border-radius: 0px 0px 5px 5px;
         border: solid 1px var(--highlights);
         border-top: solid 1px var(--normalgrey);
-
     }
 }
 
+table {
+            border: solid 1px white;
+            color: #ffffff;
+            border-collapse: collapse;
+            tr th {
+                padding: 4px;
+                border: solid 1px white;
+                
+            }
+    }
+    
 footer {
     text-align: center;
     background-color: var(--textshadow);
@@ -62,6 +73,8 @@ footer {
     border-bottom: solid 1px var(--dimgrey);
     color: var(--normalgrey);
 }
+
+
 
 :root {
     --text: #b4b4b4;

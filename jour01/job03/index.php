@@ -8,6 +8,12 @@
     <title>Runtrack-2 - PHP : Jour 1 / Job 3</title>
 </head>
 
+<?php 
+$myBoolean = TRUE;
+$myInteger = 4;
+$myString  = 'this is a string';
+$myFloat   = 1.5;
+?>
 
 <body>
     <header>
@@ -15,20 +21,44 @@
     </header>
     <main>
     <h3 class="title-bar">Espace PHP</h3>  
-    <p class="center-card">
+    <div class="center-card">
 
-        
-<?php
-$myBoolean = TRUE;
-$myInteger = 4;
-$myString  = 'this is a string';
-$myFloat   = 1.5;
-
+<?php 
+echo "\$myBoolean contient une valeur de type : " . gettype($myBoolean). "<br>";
+echo "\$myInteger contient une valeur de type : " . gettype($myInteger). "<br>";
+echo "\$myString contient une valeur de type : "  . gettype($myString).  "<br>";
+echo "\$myFloat contient une valeur de type : "   . gettype($myFloat).   "<br>";
 ?>
 
+        <table>
+        <tr>
+            <th>TYPE</th>
+            <th>NOM</th>
+            <th>VALEUR</th>
+        </tr>
+        <tr>
+            <th><?php echo gettype($myBoolean) ?></th>
+            <th><?php echo "\$myBoolean" ?></th>
+            <th><?php echo $myBoolean ?></th>
+        </tr>
+        <tr>
+            <th><?php echo gettype($myInteger) ?></th>
+            <th><?php echo "\$myInteger" ?></th>
+            <th><?php echo $myInteger ?></th>
+        </tr>
+        <tr>
+            <th><?php echo gettype($myString) ?></th>
+            <th><?php echo "\$myString" ?></th>
+            <th><?php echo $myString ?></th>
+        </tr>
+        <tr>
+            <th><?php echo gettype($myFloat) ?></th>
+            <th><?php echo "\$myFloat" ?></th>
+            <th><?php echo $myFloat ?></th>
+        </tr>
+        </table>
 
-
-    </p>
+</div>
     </main>
 
     <footer>

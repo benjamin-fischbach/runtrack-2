@@ -26,11 +26,11 @@ $val   = 6;
 $myBool= true;
 
 echo "$str2 $str $str3 <br>";         // Concaténation"
-echo "Le contenu de la variable val est $val<br>";
-echo "val + 4 est égale à " . ($val+4) . "<br>";
-echo "Affecté TRUE, le contenu de la variable myBool est $myBool<br>";
+echo "Le contenu de la variable \$val est $val<br>";
+echo "\$val + 4 est égale à " . ($val+4) . "<br>";
+echo "Affecté TRUE, le contenu de la variable \$myBool est $myBool<br>";
 $myBool= false;
-echo "Affecté FALSE, le contenu de la variable myBool est $myBool<br>";
+echo "Affecté FALSE, le contenu de la variable \$myBool est $myBool<br>";
 ?>
 
 
