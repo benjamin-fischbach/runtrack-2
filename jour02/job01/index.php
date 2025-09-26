@@ -16,12 +16,27 @@
     <h3 class="title-bar">Espace PHP</h3>  
     <div class="center-card">
 
+<div class="elseif">
 <?php 
+$i = 0;
+$obj1 = 1337;
+$obj2 = 42;
 
+
+while($i <= $obj1){
+    if ($i !== $obj2){
+        echo $i . " <br> ";
+        $i++;
+    }
+    elseif ($i == $obj2){
+        echo "<b><u>" .  $i . "</b></u><br>";
+        $i++;
+    }
+    }
+        
 ?>
 
-
-
+</div>
 </div>
     </main>
 
