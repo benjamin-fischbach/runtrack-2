@@ -23,13 +23,15 @@ $myFloat   = 1.5;
     <h3 class="title-bar">Espace PHP</h3>  
     <div class="center-card">
 
+<div>
 <?php 
 echo "\$myBoolean contient une valeur de type : " . gettype($myBoolean). "<br>";
 echo "\$myInteger contient une valeur de type : " . gettype($myInteger). "<br>";
 echo "\$myString contient une valeur de type : "  . gettype($myString).  "<br>";
 echo "\$myFloat contient une valeur de type : "   . gettype($myFloat).   "<br>";
 ?>
-
+</div>
+<div>
         <table>
         <tr>
             <th>TYPE</th>
@@ -57,7 +59,7 @@ echo "\$myFloat contient une valeur de type : "   . gettype($myFloat).   "<br>";
             <th><?php echo $myFloat ?></th>
         </tr>
         </table>
-
+</div>
 </div>
     </main>
 
