@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/runtrack2/assets/css/runtrack-style.css">
-    <title>Runtrack-2 - PHP : Jour 2 / Job 1</title>
+    <title>Runtrack-2 - PHP : Jour 2 / Job 2</title>
 </head>
 
 <body>
     <header>
-        <h1>Runtrack-2 - PHP : Jour 2 / Job 1</h1>
+        <h1>Runtrack-2 - PHP : Jour 2 / Job 2</h1>
     </header>
     <main>
     <h3 class="title-bar">Espace PHP</h3>  
