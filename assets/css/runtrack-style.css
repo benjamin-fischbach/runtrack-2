@@ -6,10 +6,15 @@
 
 body {
     box-sizing: border-box;
+    background:scroll;
     color: var(--textwhite);
     background: radial-gradient(at 50% 100%, var(--dimgrey) 0%, var(--textshadow) 100%);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     header {
         background-color: var(--textshadow);
         border-bottom: solid 1px var(--normalgrey);
