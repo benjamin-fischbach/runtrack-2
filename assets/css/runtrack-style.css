@@ -14,7 +14,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+
     header {
         background-color: var(--textshadow);
         border-bottom: solid 1px var(--normalgrey);
@@ -77,6 +77,7 @@ footer {
     border-top: solid 1px var(--normalgrey);
     border-bottom: solid 1px var(--dimgrey);
     color: var(--normalgrey);
+    margin-bottom: 0% ;
 }
 
 
