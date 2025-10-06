@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/runtrack2/assets/css/runtrack-style.css">
-    <title>Runtrack-2 - PHP : Jour 3 / Job 3</title>
+    <title>Runtrack-2 - PHP : Jour 3 / Job 4</title>
 </head>
 
 <body>
     <header>
-        <h1>Runtrack-2 - PHP : Jour 3 / Job 3</h1>
+        <h1>Runtrack-2 - PHP : Jour 3 / Job 4</h1>
     </header>
     <main>
     <h3 class="title-bar">Espace PHP</h3>  
@@ -19,10 +19,10 @@
 <div class="elseif">
 
 <?php
-$str = "I'm sorry Dave I'm afraid I can't do that";
-$obj1 = str_ireplace(array('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z','\'',' '), '', $str);
+$str = "Dans l'espace, personne ne vous entend crier";
+$obj1 = mb_strlen( $str);
 
-echo $obj1;
+echo "Dans la phrase \"Dans l'espace, personne ne vous entend crier\", on compte en tout ". $obj1 .  " caractères."
 
 ?>
 
