@@ -33,6 +33,8 @@ $tableau[] = 171;
 $tableau[] = 404;
 $tableau[] = 459;
 
+//pour chaque ($tableau comme $nombre), si nombre % 2 = un nombre entier, message paire sinon message impaire
+
 foreach ($tableau as $nombre) {
     if ($nombre % 2 == 0) {
         echo "$nombre est paire <br />";
@@ -40,8 +42,6 @@ foreach ($tableau as $nombre) {
     else 
         echo "$nombre est impaire <br />";
 }
-
-
 
 ?>
 
