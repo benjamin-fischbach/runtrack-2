@@ -69,6 +69,10 @@ table {
                 border: solid 1px white;
                 
             }
+            td {
+                padding: 4px;
+                border: solid 1px white;
+            }
     }
     
 footer {
