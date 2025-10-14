@@ -19,25 +19,31 @@
 <div class="elseif">
 
 <form action="index.php" method="POST">
-  <label for="lname">Username :</label><br>
-  <input type="text" id="username" name="username"><br>
-  <label for="fname">Password :</label><br>
-  <input type="password" id="password" name="password"><br><br>
-  <input type="submit" name="connexion" value="connexion"><br><br>
+  <label for="lname">Nom :</label><br>
+  <input type="text" id="lname" name="lname" value="Ecrire ici ..."><br>
+  <label for="fname">Prénom :</label><br>
+  <input type="text" id="fname" name="fname" value="Ecrire ici ..."><br><br>
+  <input type="submit" value="Submit"><br><br>
 </form> 
 
-<?php 
-
-$username= $_POST["username"];
-$password= $_POST["password"];
-
-if ($username === "John" && $password ==="Rambo"){
-echo "C'est pas ma guerre";
-}
-else {
-echo "Votre pire cauchemar";    
-}
-?>
+<table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Valeur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Prenom</td>
+      <td><?php echo $_POST["fname"]  ?></td>
+    </tr>
+    <tr>
+      <td>Nom</td>
+      <td><?php echo $_POST["lname"]  ?></td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 </div>
