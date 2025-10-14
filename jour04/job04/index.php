@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/runtrack2/assets/css/runtrack-style.css">
+    <title>Runtrack-2 - PHP : Jour 4 / Job 4</title>
+</head>
+
+<body>
+    <header>
+        <h1>Runtrack-2 - PHP : Jour 4 / Job 4</h1>
+    </header>
+    <main>
+    <h3 class="title-bar">Espace PHP</h3>  
+    <div class="center-card">
+
+<div class="elseif">
+
+<form action="index.php" method="POST">
+  <label for="lname">Username :</label><br>
+  <input type="text" id="username" name="username"><br>
+  <label for="fname">Password :</label><br>
+  <input type="password" id="password" name="password"><br><br>
+  <input type="submit" name="connexion" value="connexion"><br><br>
+</form> 
+
+<?php 
+
+$username= $_POST["username"];
+$password= $_POST["password"];
+
+if ($username === "John" && $password ==="Rambo"){
+echo "C'est pas ma guerre";
+}
+else {
+echo "Votre pire cauchemar";    
+}
+?>
+
+</div>
+</div>
+    </main>
+
+    <footer>
+        Ben Fischbach - CDPI La Plateforme, Marseille - 2025-2026
+    </footer>
+</body>
+
+</html>
