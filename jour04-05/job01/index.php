@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/runtrack2/assets/css/runtrack-style.css">
-    <title>Runtrack-2 - PHP : Jour 4 / Job 2</title>
+    <title>Runtrack-2 - PHP : Jour 4-5 / Job 1</title>
 </head>
 
 <body>
     <header>
-        <h1>Runtrack-2 - PHP : Jour 4 / Job 2</h1>
+        <h1>Runtrack-2 - PHP : Jour 4-5 / Job 1</h1>
     </header>
     <main>
     <h3 class="title-bar">Espace PHP</h3>  
@@ -26,24 +26,8 @@
   <input type="submit" value="Submit"><br><br>
 </form> 
 
-<table>
-  <thead>
-    <tr>
-      <th>Argument</th>
-      <th>Valeur</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Prenom</td>
-      <td><?php echo $_GET["fname"]  ?></td>
-    </tr>
-    <tr>
-      <td>Nom</td>
-      <td><?php echo $_GET["lname"]  ?></td>
-    </tr>
-  </tbody>
-</table>
+Votre nom complet est : <?php echo $_GET["fname"]."&nbsp". $_GET["lname"]; ?><br>
+Le nombre d'arguments GET est : <?php echo count($_GET) ?>
 
 </div>
 </div>

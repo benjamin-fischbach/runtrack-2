@@ -1,0 +1,44 @@
+.styleform {
+    width: 50%;
+    background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.5),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("../img/gritbackground.png");
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    padding: 2%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-bottom: 1%;
+    border: outset 5px var(--inset);
+    
+    h1 {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        padding: 0%;
+        border:outset 3px var(--inset);
+        background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/gritbackground.png");
+    }
+
+    h2 h3 h4 h5 {
+    font-family: sans-serif;
+    }
+
+    .insideform {
+        margin-top: 0.5%;
+        padding-left: 2%;
+        border: outset 3px var(--inset);
+        background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/gritbackground.png");
+    }
+
+    input {
+        padding: 1% 2% 1%;
+        background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/gritbackground.png");
+        border:outset 3px var(--inset);
+        color: white;
+        text-shadow: 1px 1px 0px black;
+    }
+}
+
+:root {
+    --inset: #535232;
+    --important: #f7de7b;
+}
