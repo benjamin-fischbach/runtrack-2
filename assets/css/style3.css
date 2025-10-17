@@ -1,44 +1,90 @@
 .styleform {
     width: 50%;
-    background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.5),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("../img/gritbackground.png");
+    background-image: linear-gradient(to bottom, var(--dimgrey), var(--normalgrey));
+    border-radius: 5px 10px 25px 5px;
     color: white;
     text-shadow: 1px 1px 0px black;
-    padding: 2%;
-    padding-top: 0.5%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-    padding-bottom: 1%;
+    padding: 0%;
     border: outset 5px var(--inset);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
     
     h1 {
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: white;
-        padding: 0%;
-        border:outset 3px var(--inset);
-        background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/gritbackground.png");
+        background-image: linear-gradient(to top, var(--dimgrey), var(--darkgrey), var(--darkgrey), var(--normalgrey), var(--dimgrey));
+        box-shadow: 0px -1px 0px var(--highlights);
+        border-bottom: solid 1px var(--textshadow);
+        border-radius: 5px 10px 99px 0px;
+        padding-left: 3%;
+        padding-bottom: 0%;
+        padding-top: 0%;
     }
 
     h2 h3 h4 h5 {
     font-family: sans-serif;
     }
 
+    label {
+        border:solid 1px var(--highlights);
+        border-radius: 25px 0px 0px 25px;
+        padding:  0.5% 1%;
+    }
+
     .insideform {
         margin-top: 0.5%;
-        padding-left: 2%;
-        border: outset 3px var(--inset);
-        background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/gritbackground.png");
+        padding-left: 0.5%;
+        padding-top: 1%;
+        margin: 1%;
+        border: solid 1px var(--highlights);
+        border-radius: 5px;
     }
 
     input {
+        width: 25%;
         padding: 1% 2% 1%;
-        background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/gritbackground.png");
-        border:outset 3px var(--inset);
+        background-color: var(--dimgrey);
+        box-shadow: 1px 0px 0px var(--darkgrey);
+        border-radius: 5px 5px 5px 5px;
+        border-top: outset 0.5px var(--normalgrey);
+        border-left: outset 0.5px var(--normalgrey);
+        border-right: outset 0.5px var(--normalgrey);
         color: white;
-        text-shadow: 1px 1px 0px black;
+        text-shadow: none;
+
+    
+    }
+    input:hover {
+        background-image: linear-gradient(to bottom right, var(--normalgrey), var(--highlights), var(--normalgrey), var(--normalgrey));
+        color: var(--textshadow);
+        }
+
+    #style {
+        padding: 1% 2%;
+        background-color: var(--textshadow);
+        border-radius: 5px;
+        border:solid 1px var(--highlights);
+        color: white;
+    }
+
+    #style-return {
+        color: white;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin: 1%;
+        border: solid 1px var(--highlights);
+        background: linear-gradient(to top, var(--darkgrey), var(--darkgrey), var(--textshadow));
+        border-radius: 5px 5px 25px 5px;
+
     }
 }
 
 :root {
-    --inset: #535232;
-    --important: #f7de7b;
+    --text: #b4b4b4;
+    --textshadow: #000000;
+    --important: #ffffff;
+    --darkgrey: #181818;
+    --normalgrey: #545454;
+    --dimgrey: #303030;
+    --highlights: #7f7f7f;
+
 }
