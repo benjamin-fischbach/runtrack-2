@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+    if(isset($_GET['style']))
+    {
+      $stylecss =$_GET['style'] ;
+    }
+    else {
+      $stylecss ='Veuillez choisir un style CSS...';
+}
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/runtrack2/assets/css/runtrack-style.css">
-    <link rel="stylesheet" href="/runtrack2/assets/css/<?php echo $_GET['style']?>">
+    <link rel="stylesheet" href="/runtrack2/assets/css/<?php echo $stylecss?>">
     <title>Runtrack-2 - PHP : Jour 6 / Job 5</title>
 </head>
 
@@ -32,22 +42,7 @@
 
 <input type="submit" name="submit" value="submit"><br><br>
 </form> 
-<div>
-<?php
 
- if (isset($_GET['style'])) {
-
-$stylecss = $_GET['style'];
-
-} else {
-
-$stylecss = 'runtrack-style.css';
-
-}
-
-
-?>
-</div>
 </div>
 <div id="style-return">
 <?php echo "Style choisi : ". $stylecss ?>
