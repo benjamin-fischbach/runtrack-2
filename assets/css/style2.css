@@ -1,21 +1,24 @@
 .styleform {
     width: 50%;
-    background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.5),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1)), url("../img/gritbackground.png");
-    color: white;
+    background-color: white;
     text-shadow: 1px 1px 0px black;
     padding: 2%;
-    padding-top: 0.5%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
     padding-bottom: 1%;
-    border: outset 5px var(--inset);
+    font-family:Arial, Helvetica, sans-serif;
+    color: var(--aqua);
+    text-shadow: none;
+    font-weight:500;
+    border-radius: 0px 10px 0px 5px ;
+    box-shadow: 3px 3px 0px var(--aquatransparent);
     
     h1 {
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color: white;
-        padding: 0%;
-        border:outset 3px var(--inset);
-        background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/gritbackground.png");
+        padding-left: 2%;
+        border-radius: 0px 5px 0% 0%;
+        background-color: var(--aqua);
     }
 
     h2 h3 h4 h5 {
@@ -26,19 +29,49 @@
         margin-top: 0.5%;
         padding-left: 2%;
         border: outset 3px var(--inset);
-        background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/gritbackground.png");
+        text-shadow: none;
+        
     }
 
     input {
-        padding: 1% 2% 1%;
-        background-image:linear-gradient(to top right, rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)), url("../img/gritbackground.png");
+        padding: 2% 4% 2%;
+        background-color: var(--aqua);
         border:outset 3px var(--inset);
         color: white;
-        text-shadow: 1px 1px 0px black;
+        text-shadow: none;
+        text-transform: uppercase;
+        border-radius: 0px 25px 25px 25px;
+        box-shadow: 3px 3px 0px var(--aquatransparent);
+    }
+        input:hover {
+        background-color: var(--marina);
+    }
+
+    #style {
+        padding: 1% 2%;
+        background-color: var(--aqua);
+        border-radius: 0px 5px 0px 5px;
+        border:inset 3px var(--inset);
+        color: white;
+    }
+
+    #style-return {
+        color: white;
+        width: 50%;
+        margin-bottom: -25px;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        background-color: var(--aqua);
+        border-radius: 0px 25px 25px 0px;
+        border-bottom: solid 2px white;
+        border-right: solid 2px white;
     }
 }
 
 :root {
-    --inset: #535232;
+    --marina: #12CBC4;
+    --aqua: #006266;
+    --aquatransparent: #00636650;
     --important: #f7de7b;
 }

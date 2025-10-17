@@ -49,7 +49,9 @@ $stylecss = 'runtrack-style.css';
 ?>
 </div>
 </div>
+<div id="style-return">
 <?php echo "Style choisi : ". $stylecss ?>
+</div>
     </main>
 
     <footer>
