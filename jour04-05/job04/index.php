@@ -24,8 +24,23 @@
   <label for="fname">Prénom :</label><br>
   <input type="text" id="fname" name="fname" value="Ecrire ici ..."><br><br>
   <input type="submit" value="Submit"><br><br>
-</form> 
-
+</form>
+<?php
+    if(isset($_POST["fname"]))
+    {
+    $prenom= $_POST["fname"];
+    }
+    else {
+    $prenom =NULL;
+    }
+    if(isset($_POST["lname"]))
+    {
+    $nom= $_POST["lname"];
+    }
+    else {
+    $nom =NULL;
+    } 
+?>
 <table>
   <thead>
     <tr>
@@ -36,11 +51,11 @@
   <tbody>
     <tr>
       <td>Prenom</td>
-      <td><?php echo $_POST["fname"]  ?></td>
+      <td><?php echo $prenom  ?></td>
     </tr>
     <tr>
       <td>Nom</td>
-      <td><?php echo $_POST["lname"]  ?></td>
+      <td><?php echo $nom  ?></td>
     </tr>
   </tbody>
 </table>

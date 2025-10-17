@@ -28,11 +28,26 @@
 
 <?php 
 
-$username= $_POST["username"];
-$password= $_POST["password"];
+    if(isset($_POST["username"]))
+    {
+    $username= $_POST["username"];
+    }
+    else {
+    $username =NULL;
+    }
+    if(isset($_POST["password"]))
+    {
+    $password= $_POST["password"];
+    }
+    else {
+    $password =NULL;
+    }
 
 if ($username === "John" && $password ==="Rambo"){
 echo "C'est pas ma guerre";
+}
+elseif($username === NULL && $password === NULL){
+echo "";
 }
 else {
 echo "Votre pire cauchemar";    

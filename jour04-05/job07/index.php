@@ -31,7 +31,20 @@
 
 <?php 
 
-$hauteur = $_POST["hauteur"];
+    if(isset($_POST['hauteur']))
+    {
+    $hauteur = $_POST["hauteur"];
+    }
+    else {
+    $hauteur =NULL;
+    }
+    if(isset($_POST["largeur"]))
+    {
+    $largeur = $_POST["largeur"];
+    }
+    else {
+    $largeur =NULL;
+    }
 
 for ($i = 1; $i <= $hauteur; $i++) {
 
@@ -47,7 +60,7 @@ for ($i = 1; $i <= $hauteur; $i++) {
 echo "/". str_repeat('_', ($hauteur * 2)) . "\\";
 
 
-$largeur = $_POST["largeur"];
+
 
 echo "&nbsp";
 

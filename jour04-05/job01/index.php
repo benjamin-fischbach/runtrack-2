@@ -25,8 +25,24 @@
   <input type="text" id="fname" name="fname" value="Ecrire ici ..."><br><br>
   <input type="submit" value="Submit"><br><br>
 </form> 
+  <?php
+        if(isset($_GET["fname"]))
+    {
+    $prenom= $_GET["fname"];
+    }
+    else {
+    $prenom =NULL;
+    }
+    if(isset($_GET["lname"]))
+    {
+    $nom= $_GET["lname"];
+    }
+    else {
+    $nom =NULL;
+    } 
+?>
 
-Votre nom complet est : <?php echo $_GET["fname"]."&nbsp". $_GET["lname"]; ?><br>
+Votre nom complet est : <?php echo $prenom."&nbsp". $nom; ?><br>
 Le nombre d'arguments GET est : <?php echo count($_GET) ?>
 
 </div>

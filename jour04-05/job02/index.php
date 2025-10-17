@@ -17,12 +17,28 @@
     <div class="center-card">
 
 <div class="elseif">
+  <?php
+        if(isset($_GET["fname"]))
+    {
+    $prenom= $_GET["fname"];
+    }
+    else {
+    $prenom =NULL;
+    }
+    if(isset($_GET["lname"]))
+    {
+    $nom= $_GET["lname"];
+    }
+    else {
+    $nom =NULL;
+    } 
+?>
 
 <form action="index.php" method="$_GET">
   <label for="lname">Nom :</label><br>
-  <input type="text" id="lname" name="lname" value="Ecrire ici ..."><br>
+  <input type="text" id="lname" name="lname" value="..."><br>
   <label for="fname">Prénom :</label><br>
-  <input type="text" id="fname" name="fname" value="Ecrire ici ..."><br><br>
+  <input type="text" id="fname" name="fname" value="..."><br><br>
   <input type="submit" value="Submit"><br><br>
 </form> 
 
@@ -36,11 +52,11 @@
   <tbody>
     <tr>
       <td>Prenom</td>
-      <td><?php echo $_GET["fname"]  ?></td>
+      <td><?php echo $prenom  ?></td>
     </tr>
     <tr>
       <td>Nom</td>
-      <td><?php echo $_GET["lname"]  ?></td>
+      <td><?php echo $nom ?></td>
     </tr>
   </tbody>
 </table>

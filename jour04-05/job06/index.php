@@ -26,7 +26,14 @@
 
 <?php 
 
-$nombre = $_GET["nombre"];
+if(isset($_GET['nombre']))
+    {
+    $nombre = $_GET["nombre"];
+    }
+    else {
+    $nombre =NULL;
+    }
+
 
 if (($nombre % 2 ) == 0){
 echo "Nombre pair";
