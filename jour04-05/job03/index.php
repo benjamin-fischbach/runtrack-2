@@ -17,7 +17,22 @@
     <div class="center-card">
 
 <div class="elseif">
-
+<?php
+        if(isset($_POST["fname"]))
+    {
+    $prenom= $_POST["fname"];
+    }
+    else {
+    $prenom =NULL;
+    }
+    if(isset($_POST["lname"]))
+    {
+    $nom= $_POST["lname"];
+    }
+    else {
+    $nom =NULL;
+    } 
+?>
 <form action="index.php" method="POST">
   <label for="lname">Nom :</label><br>
   <input type="text" id="lname" name="lname" value="Ecrire ici ..."><br>
@@ -26,7 +41,7 @@
   <input type="submit" value="Submit"><br><br>
 </form> 
 
-Votre nom complet est : <?php echo $_POST["fname"]."&nbsp". $_POST["lname"]; ?><br>
+Votre nom complet est : <?php echo $prenom."&nbsp". $nom; ?><br>
 Le nombre d'arguments POST est : <?php echo count($_POST) ?>
 
 </div>
