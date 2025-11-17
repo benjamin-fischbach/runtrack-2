@@ -45,11 +45,11 @@ if(isset($_SESSION['nbvisites'])){
 exit();
 }
 ?>
-
+<div>
 <form method="post">
     <input type="submit" name="reset" class="reset" value="RESET" />
 </form>
-
+</div>
 </div>
 </div>
     </main>
