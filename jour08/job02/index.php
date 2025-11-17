@@ -2,14 +2,14 @@
 
 setcookie('nbvisites', 0);
 
-// Check if the 'nbvisites' cookie exists,
-// if not set it to 0
+// Check le cookie 'nbvisites' existe,
+// si non met ce cookie à 0
 if(!isset($_COOKIE['nbvisites'])){
     setcookie('nbvisites', 1);
     $nbvisites = 1;
 } else {
 
-    // Increment the cookie value
+    // Incrementation de la valeur du cookie
     $nbvisites = $_COOKIE['nbvisites'] + 1;
     setcookie('nbvisites', $nbvisites);
 }
