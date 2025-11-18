@@ -84,6 +84,35 @@ footer {
     margin-bottom: 0% ;
 }
 
+.elseif {
+    .connection{
+    border-radius: 5px;
+    background-color: var(--normalgrey);
+    border: solid 2px var(--highlights);
+    border-top: solid 1px var(--normalgrey);
+    box-shadow: 2px 2px 0px var(--highlights);
+    padding: 4%;
+
+    input[type=text] {
+        width: 100%;
+        border-radius: 5px;
+        background-color: #000000;
+        color: var(--text);
+        padding: 1%;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+    input[type=text]:focus {
+        outline: none;
+    }
+
+    h2 {
+        text-align: center;
+        text-shadow: 1px 1px 0px var(--darkgrey);
+    }
+
+}
+}
 
 
 :root {
